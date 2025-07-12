@@ -123,6 +123,6 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: castromeka/bankapp:dev
+        tags: castromeka/bankapp:latest
       
       
