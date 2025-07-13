@@ -22,7 +22,7 @@ jobs:
     
   security_check:
     runs-on: self-hosted
-    needs: compile
+    needs: compile #run only after completion compile job
 
     steps:
     - uses: actions/checkout@v4
@@ -58,7 +58,7 @@ jobs:
 
   build_sonar_scan:
     runs-on: self-hosted
-    needs: test
+    needs: test #run only after completion security_check job
 
     steps:
     - uses: actions/checkout@v4
